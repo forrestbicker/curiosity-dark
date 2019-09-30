@@ -1,0 +1,21 @@
+{
+    "name": "six-dark",
+    "displayName": "Six Dark",
+    "description": "One Dark Pro Vivid 6.0",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.37.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Six Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Six Dark-color-theme.json"
+            }
+        ]
+    }
+}
