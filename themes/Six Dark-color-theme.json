@@ -239,6 +239,7 @@
 				// "support.function.builtin.python",
 				"storage.type.primitive.java", // void java
 				"keyword.other.import.java",
+				"keyword.other.documentation.javadoc.java", // javadoc
 			],
 			"settings": {
 				"foreground": "#D55FE4" // PURPLE
@@ -722,8 +723,9 @@
 				"source.wsd keyword.control.diagram",
 				"keyword.language.gherkin.feature.step",
 				"variable.parameter.function.language.special.self.python", // self in method declaration
-				"variable.parameter.function.language.python" // non-self in method declaration
+				"variable.parameter.function.language.python", // non-self in method declaration
 				// "source.python support.type.python",  // type
+				"storage.type.java" // java types
 			],
 			"settings": {
 				"fontStyle": "italic"
