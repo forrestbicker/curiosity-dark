@@ -240,6 +240,7 @@
 				"storage.type.primitive.java", // void java
 				"keyword.other.import.java",
 				"keyword.other.documentation.javadoc.java", // javadoc
+				"storage.type.primitive.array.java",
 			],
 			"settings": {
 				"foreground": "#D55FE4" // PURPLE
@@ -302,7 +303,9 @@
 				"meta.embedded.block variable punctuation.definition.variable.php",
 				"string.quoted.double.class.other",
 				"source.toml keyword",
-				"storage.type.java" // custom types (classes) java
+				"storage.type.java", // custom types (classes) java
+				"keyword.operator.assignment.java", // asignment equals
+				"invalid.deprecated.package_name_not_lowercase.java", // caps annotation
 			],
 			"settings": {
 				"foreground": "#AAB1C1" // GRAY
@@ -531,10 +534,10 @@
 				"text.tex punctuation.definition.function",
 				"entity.name.section.fsharp entity.name.section.fsharp",
 				"support.variable.class.function",
-				"keyword.control.cucumber.table"
+				"keyword.control.cucumber.table",
 			],
 			"settings": {
-				"foreground": "#4DACF9"
+				"foreground": "#4DACF9" // blue
 			}
 		},
 		{
@@ -569,9 +572,10 @@
 				"keyword.language.gherkin.feature.scenario",
 				// "punctuation.definition.parameters",  // function def parens
 				"constant.character.escape.python", // escape characters
+				"keyword.operator",
 			],
 			"settings": {
-				"foreground": "#1CB8C7"
+				"foreground": "#1CB8C7" // light blue
 			}
 		},
 		{
