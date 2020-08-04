@@ -304,6 +304,7 @@
 				"string.quoted.double.class.other",
 				"source.toml keyword",
 				"storage.type.java", // custom types (classes) java
+				"storage.type.object.array.java", // custon types[] java
 				"keyword.operator.assignment.java", // asignment equals
 				"invalid.deprecated.package_name_not_lowercase.java", // caps annotation
 			],
@@ -730,7 +731,8 @@
 				"variable.parameter.function.language.special.self.python", // self in method declaration
 				"variable.parameter.function.language.python", // non-self in method declaration
 				// "source.python support.type.python",  // type
-				"storage.type.java" // custom types (classes) java
+				"storage.type.java", // custom types (classes) java
+				"storage.type.object.array.java", // custom types[] java
 			],
 			"settings": {
 				"fontStyle": "italic"
