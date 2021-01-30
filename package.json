@@ -1,10 +1,10 @@
 {
-    "name": "six-dark",
-    "displayName": "Six Dark",
-    "description": "One Dark Pro Vivid 6.0",
+    "name": "curiosity-dark",
+    "displayName": "curiosity-dark",
+    "description": "Personalized iteration of One Dark Pro",
     "version": "0.0.1",
     "engines": {
-        "vscode": "^1.37.0"
+        "vscode": "^1.52.0"
     },
     "categories": [
         "Themes"
@@ -12,9 +12,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "Six Dark",
+                "label": "curiosity-dark",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Six Dark-color-theme.json"
+                "path": "./themes/curiosity-dark-color-theme.json"
             }
         ]
     }
