@@ -130,6 +130,13 @@
 		"titleBar.border": "#181a1f",
 		"textLink.foreground": "#4DACF9",
 	},
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"parameter.declaration": "#D99B55",
+		"variable.parameter": "#D99B55",
+		"module": "#AAB1C1",
+		"class.builtin": "#1CB8C7",
+	},
 	"tokenColors": [
 		{
 			"name": "COMMENT",
@@ -175,7 +182,7 @@
 				"entity.name.record.field.elm",
 				"entity.name.record.field.accessor.elm",
 				"storage.modifier.array.bracket",
-				"source.css entity.other"
+				"source.css entity.other",
 			],
 			"settings": {
 				"foreground": "#F15F6C"
@@ -241,6 +248,7 @@
 				"keyword.other.import.java",
 				"keyword.other.documentation.javadoc.java", // javadoc
 				"storage.type.primitive.array.java",
+				"builtin"
 			],
 			"settings": {
 				"foreground": "#D55FE4" // PURPLE
@@ -249,10 +257,10 @@
 		{
 			"name": "VARIABLE",
 			"scope": [
-				"variable",
+				// "variable",
 				"variable.object",
 				"variable.other",
-				"variable.parameter",
+				// "variable.parameter",
 				"support",
 				"string constant.other.placeholder",
 				"entity.name.module",
@@ -269,7 +277,6 @@
 				"source.cpp",
 				"source.go",
 				"source.python",
-				"meta.function-call.arguments.python",
 				"source.ruby",
 				"source.coffee.embedded.source",
 				"source.coffee",
@@ -307,6 +314,9 @@
 				"storage.type.object.array.java", // custon types[] java
 				"keyword.operator.assignment.java", // asignment equals
 				"invalid.deprecated.package_name_not_lowercase.java", // caps annotation
+				"punctuation.definition.arguments.begin.python", // python open function braces
+				"punctuation.definition.arguments.end.python", // python closed function braces
+				"meta.item-access.python", // indexed value python
 			],
 			"settings": {
 				"foreground": "#AAB1C1" // GRAY
@@ -396,10 +406,10 @@
 				"entity.other.attribute-name.class",
 				"meta.attribute.id entity.other.attribute-name",
 				"text.html entity.other.attribute-name",
-				"variable.parameter.function.language.special.self.python", // self in method declaration
 				"variable.parameter.function.language.python", // non-self in method declaration
-				"variable.parameter", // kwag
-				"constant.character.format.placeholder.other.python"
+				// "variable.parameter", // kwag
+				"constant.character.format.placeholder.other.python",
+				"variable.parameter.function.python" // kwag
 			],
 			"settings": {
 				"foreground": "#D99B55" // ORANGE
@@ -457,6 +467,8 @@
 				"keyword.other.skinparam.keyword",
 				"support.type.property-name.json.comments", // json settings
 				"variable.other.object.java", // java objects
+				"entity.name.namespace", // python function caller
+				"variable.parameter.function.language.special.self.python", // self in method declaration python
 			],
 			"settings": {
 				"foreground": "#F15F6C" // RED
@@ -509,7 +521,8 @@
 				"constant.others.fsharp",
 				"keyword.other.unit",
 				"string.quoted.double.skinparam.value",
-				"source.toml constant"
+				"source.toml constant",
+				"variable.other.constant" // ptyhon constant
 			],
 			"settings": {
 				"foreground": "#D99B55" // ORANGE
@@ -536,6 +549,7 @@
 				"entity.name.section.fsharp entity.name.section.fsharp",
 				"support.variable.class.function",
 				"keyword.control.cucumber.table",
+				"meta.function-call.python",
 			],
 			"settings": {
 				"foreground": "#4DACF9" // blue
@@ -576,7 +590,7 @@
 				"keyword.operator",
 			],
 			"settings": {
-				"foreground": "#1CB8C7" // light blue
+				"foreground": "#1CB8C7" // light blue, teal
 			}
 		},
 		{
