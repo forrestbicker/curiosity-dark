@@ -130,14 +130,15 @@
 		"titleBar.border": "#181a1f",
 		"textLink.foreground": "#4DACF9",
 	},
-	"semanticHighlighting": true,
+	// "semanticHighlighting": true,
 	"semanticTokenColors": {
 		"parameter": "#D99B55", // params in header/body
 		"module": "#F15F6C", // imports
 		"selfParameter": "#F15F6C", // self
 		"class.builtin": "#1CB8C7", // builtins
-		"class": "#EBC368", //classes and structs
-		"property.readonly": "#D99B55" // constants
+		"class.declaration": "#EBC368", //classes and structs
+		// "class": "#AAB1C1",
+		"property.readonly": "#D99B55", // constants
 	},
 	"tokenColors": [
 		{
@@ -356,7 +357,6 @@
 				"storage.type.powershell",
 				"comment.block.documentation entity.name.type",
 				"source.java storage.type",
-				"storage.type.primitive",
 				"source.groovy storage.type",
 				"storage.type.r",
 				"source.haskell storage.type",
@@ -574,7 +574,7 @@
 		{
 			"name": "SUPPORT",
 			"scope": [
-				"entity.name",
+				// "entity.name",
 				"entity.other",
 				"support.orther.namespace.use.php",
 				"meta.use.php",
@@ -615,7 +615,10 @@
 				"source.js punctuation.section.embedded",
 				"punctuation.definition.template-expression",
 				"support.class",
-				"entity.name.type",
+				"entity.name.type", // java class file title
+				// "storage.type.java", // java class structs and types
+				// "storage.type.generic.java",
+				// "storage.type.object.array.java",
 				"storage.type.string.python",
 				"string.interpolated.pug",
 				"support.constant.handlebars",
