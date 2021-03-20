@@ -130,14 +130,23 @@
 		"titleBar.border": "#181a1f",
 		"textLink.foreground": "#4DACF9",
 	},
-	"semanticHighlighting": true,
+	// "semanticHighlighting": true,
 	"semanticTokenColors": {
-		"parameter.declaration": "#D99B55",
-		"variable.parameter": "#D99B55",
-		"module": "#AAB1C1",
-		"class.builtin": "#1CB8C7",
+		"parameter": "#D99B55", // params in header/body
+		"module": "#F15F6C", // imports
+		"selfParameter": "#F15F6C", // self
+		"class.builtin": "#1CB8C7", // builtins
+		"class.declaration": "#EBC368", //classes and structs
+		// "class": "#AAB1C1",
+		"property.readonly": "#D99B55", // constants
 	},
 	"tokenColors": [
+		{
+			"scope": "meta.function-call.generic",
+			"settings": {
+				"foreground": "#FF0000"
+			}
+		},
 		{
 			"name": "COMMENT",
 			"scope": [
@@ -192,6 +201,7 @@
 			"name": "KEYWORD",
 			"scope": [
 				// "keyword",  // operators
+				"keyword.operator", // operators
 				"keyword.control",
 				"keyword.other.template",
 				"keyword.other.substitution",
@@ -241,14 +251,16 @@
 				"keyword.other.class.fileds",
 				"source.toml entity.other.attribute-name",
 				"source.scala keyword.declaration",
-				"keyword.operator.logical.python", // logical operators (in, not)
+				// "keyword.operator.logical.python", // logical operators (in, not)
 				"storage.type", // declaration builtins (class, def)
 				// "support.function.builtin.python",
-				"storage.type.primitive.java", // void java
-				"keyword.other.import.java",
+				"storage.type.primitive", // void
+				"storage.type.built-in.primitive", // primitives
+				"keyword.other.import",
 				"keyword.other.documentation.javadoc.java", // javadoc
-				"storage.type.primitive.array.java",
-				"builtin"
+				"storage.type.primitive.array",
+				"builtin",
+				"keyword.other.python", // python "as"
 			],
 			"settings": {
 				"foreground": "#D55FE4" // PURPLE
@@ -262,7 +274,7 @@
 				"variable.other",
 				// "variable.parameter",
 				"support",
-				"string constant.other.placeholder",
+				// "string constant.other.placeholder",
 				"entity.name.module",
 				"variable.import.parameter",
 				"variable.other.class",
@@ -312,7 +324,6 @@
 				"source.toml keyword",
 				"storage.type.java", // custom types (classes) java
 				"storage.type.object.array.java", // custon types[] java
-				"keyword.operator.assignment.java", // asignment equals
 				"invalid.deprecated.package_name_not_lowercase.java", // caps annotation
 				"punctuation.definition.arguments.begin.python", // python open function braces
 				"punctuation.definition.arguments.end.python", // python closed function braces
@@ -346,7 +357,6 @@
 				"storage.type.powershell",
 				"comment.block.documentation entity.name.type",
 				"source.java storage.type",
-				"storage.type.primitive",
 				"source.groovy storage.type",
 				"storage.type.r",
 				"source.haskell storage.type",
@@ -406,10 +416,7 @@
 				"entity.other.attribute-name.class",
 				"meta.attribute.id entity.other.attribute-name",
 				"text.html entity.other.attribute-name",
-				"variable.parameter.function.language.python", // non-self in method declaration
-				// "variable.parameter", // kwag
 				"constant.character.format.placeholder.other.python",
-				"variable.parameter.function.python" // kwag
 			],
 			"settings": {
 				"foreground": "#D99B55" // ORANGE
@@ -538,7 +545,6 @@
 				"markup.link",
 				"support.type.vendored",
 				"support.other.variable",
-				"meta.function-call.generic.python",
 				"meta.method-call.groovy meta.method.groovy",
 				"meta.class.body.groovy meta.method.body.java storage.type.groovy",
 				"punctuation.decorator.ts",
@@ -549,7 +555,17 @@
 				"entity.name.section.fsharp entity.name.section.fsharp",
 				"support.variable.class.function",
 				"keyword.control.cucumber.table",
-				"meta.function-call.python",
+				"meta.require",
+				"support.function.any-method",
+				"keyword.other.special-method",
+				// functions & methods
+				"entity.name.function",
+				"support.function",
+				"support.constant.handlebars",
+				"source.powershell variable.other.member",
+				"entity.name.operator.custom-literal",
+				// "meta.function-call.python source.python",
+				// "source.python meta.function-call.python",
 			],
 			"settings": {
 				"foreground": "#4DACF9" // blue
@@ -558,7 +574,7 @@
 		{
 			"name": "SUPPORT",
 			"scope": [
-				"entity.name",
+				// "entity.name",
 				"entity.other",
 				"support.orther.namespace.use.php",
 				"meta.use.php",
@@ -585,7 +601,6 @@
 				"constant.language.unit.fsharp",
 				"source.wsd support.class.preprocessings",
 				"keyword.language.gherkin.feature.scenario",
-				// "punctuation.definition.parameters",  // function def parens
 				"constant.character.escape.python", // escape characters
 				"keyword.operator",
 			],
@@ -600,7 +615,10 @@
 				"source.js punctuation.section.embedded",
 				"punctuation.definition.template-expression",
 				"support.class",
-				"entity.name.type",
+				"entity.name.type", // java class file title
+				// "storage.type.java", // java class structs and types
+				// "storage.type.generic.java",
+				// "storage.type.object.array.java",
 				"storage.type.string.python",
 				"string.interpolated.pug",
 				"support.constant.handlebars",
