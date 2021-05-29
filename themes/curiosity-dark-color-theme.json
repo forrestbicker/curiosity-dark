@@ -416,6 +416,7 @@
 				"entity.other.attribute-name.class",
 				"meta.attribute.id entity.other.attribute-name",
 				"text.html entity.other.attribute-name",
+				"punctuation.bracket.angle.java",
 				"constant.character.format.placeholder.other.python",
 			],
 			"settings": {
@@ -611,13 +612,13 @@
 		{
 			"name": "MISC",
 			"scope": [
+				"storage.type.generic.java", // generic <T>
 				"source.js constant.other.object.key.js string.unquoted.label.js",
 				"source.js punctuation.section.embedded",
 				"punctuation.definition.template-expression",
 				"support.class",
 				"entity.name.type", // java class file title
 				// "storage.type.java", // java class structs and types
-				// "storage.type.generic.java",
 				// "storage.type.object.array.java",
 				"storage.type.string.python",
 				"string.interpolated.pug",
