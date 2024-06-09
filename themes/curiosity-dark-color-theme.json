@@ -144,7 +144,7 @@
 		{
 			"scope": "meta.function-call.generic",
 			"settings": {
-				"foreground": "#FF0000"
+				"foreground": "#4DACF9" // python functions
 			}
 		},
 		{
